@@ -268,7 +268,7 @@ confirmPasswordInputSignup.addEventListener("mouseleave", () => {
 
 myAccountPageNav.addEventListener("click", () => {
     console.log("go to my account");
-    window.location.href = "/account.html";
+    window.location.href = "./account.html";
 });
 
 logoutNav.addEventListener("click", () => {

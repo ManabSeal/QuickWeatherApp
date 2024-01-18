@@ -29,7 +29,7 @@ if(quickWeatherData){
     });
     
 }else{
-    window.location.href = "/index.html";
+    window.location.href = "./index.html";
 }
 
 
@@ -43,7 +43,7 @@ homePageNav.addEventListener("click", () => {
 
 myAccountPageNav.addEventListener("click", () => {
     console.log("go to my account");
-    window.location.href = "/account.html";
+    window.location.href = "./account.html";
 
 });
 
