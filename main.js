@@ -34,16 +34,17 @@ if(quickWeatherData){
     myAccountPageNav.style.display = "block";
     logoutNav.style.display = "block";
     let data = JSON.parse(quickWeatherData);
-    checkData(data["email"], data["password"]).then((res) => {
-        if(!res){
-            window.localStorage.removeItem("quickWeatherData");
-            window.location.reload();
-        }
-        else{
-            autoWeatherDetails(data["lat"], data["lon"]);
-        }
-    });
-    
+    if(data["lat"] != 0 && data["lon"] != 0){
+        checkData(data["email"], data["password"]).then((res) => {
+            if(!res){
+                window.localStorage.removeItem("quickWeatherData");
+                window.location.reload();
+            }
+            else{
+                autoWeatherDetails(data["lat"], data["lon"]);
+            }
+        });
+    }
 }else{
     loginModalButton.style.display = "block";
     myAccountPageNav.style.display = "none";
