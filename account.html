@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="style3.css">
+    <script type="module" src="./main3.js" defer></script>
+    <script type="module" src="./database.js" defer></script>
+</head>
+<body>
+    <nav>
+        <h1>About Us</h1>
+        <ul id="sidemenu">
+          <li id="home-page">Home</li>
+          <li id="about-page">About</li>
+          <li class="active" id="my-account-page">My Account</li>
+          <li id="logout">Log out</li>
+          <svg id="close-menu" width="12" height="12" viewPort="0 0 12 12" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <line x1="1" y1="11" 
+                  x2="11" y2="1" 
+                  stroke="black" 
+                  stroke-width="2"/>
+            <line x1="1" y1="1" 
+                  x2="11" y2="11" 
+                  stroke="black" 
+                  stroke-width="2"/>
+          </svg>
+        </ul>
+        <svg id="open-menu" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-28.34 -28.34 340.11 340.11" xml:space="preserve" width="24px" height="24px" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <rect x="0" y="40.84" style="fill:#010002;" width="283.426" height="47.735"></rect> <rect x="0" y="117.282" style="fill:#010002;" width="283.426" height="47.735"></rect> <rect x="0" y="194.851" style="fill:#010002;" width="283.426" height="47.735"></rect> </g> </g></svg>
+    </nav>
+    <section class="about-section">
+        <h2 id="name"></h2><br>
+        <p id="email"></p><br>
+        <p id="location"></p><br>
+        <p id="city"></p>
+    </section>
+</body>
+</html>

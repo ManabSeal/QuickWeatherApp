@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style2.css">
+    <script type="module" src="./main2.js" defer></script>
+    <script type="module" src="./database.js" defer></script>
+<body>
+    <div class="modal" id="log-in-modal">
+        <div class="modal-content">
+          <div class="modal-heading">
+            <span class="close" id="close-modal-btn">
+              <svg width="12" height="12" viewPort="0 0 12 12" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="1" y1="11" 
+                      x2="11" y2="1" 
+                      stroke="black" 
+                      stroke-width="2"/>
+                <line x1="1" y1="1" 
+                      x2="11" y2="11" 
+                      stroke="black" 
+                      stroke-width="2"/>
+                </svg>
+            </span>
+            <h2>Log In</h1>
+          </div>
+          <div class="modal-body">
+            <h4>Email ID</h4>
+            <input id="email-input" type="text" placeholder="E.g., john@abc.com">
+            <h4>Password</h4>
+            <input id="password-input" type="password" placeholder="Your Password">
+            <button class="login-btn" id="main-login-btn">Log In</button>
+            <div class="separator"></div>
+            <button class="signup-page" id="signup-modal-btn">Sign Up</button>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal" id="sign-up-modal">
+        <div class="modal-content">
+          <div class="modal-heading">
+            <span class="close" id="close-modal-btn2">
+              <svg width="12" height="12" viewPort="0 0 12 12" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="1" y1="11" 
+                      x2="11" y2="1" 
+                      stroke="black" 
+                      stroke-width="2"/>
+                <line x1="1" y1="1" 
+                      x2="11" y2="11" 
+                      stroke="black" 
+                      stroke-width="2"/>
+                </svg>
+            </span>
+            <h2>Sign Up</h1>
+          </div>
+          <div class="modal-body">
+            <h4>Name</h4>
+            <input id="name-input-signup" type="text" placeholder="E.g., John Legend">
+            <h4>Email ID</h4>
+            <input id="email-input-signup" type="text" placeholder="E.g., john@abc.com">
+            <h4>Password</h4>
+            <input id="password-input-signup" type="text" placeholder="Your Password">
+            <h4>Confirm Password</h4>
+            <input id="password-confirm-input-signup" type="text" placeholder="Confirm Your Password">
+            <button class="signup-page" id="main-signup-btn">Sign Up</button>
+            <div class="separator"></div>
+            <button class="login-btn" id="login-modal-btn">Log In</button>
+          </div>
+        </div>
+    </div>
+
+    <nav>
+        <h1>About Us</h1>
+        <ul id="sidemenu">
+          <li id="home-page">Home</li>
+          <li class="active" id="about-page">About</li>
+          <li id="open-login-modal">Log In</li>
+          <li id="my-account-page">My Account</li>
+          <li id="logout">Log out</li>
+          <svg id="close-menu" width="12" height="12" viewPort="0 0 12 12" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <line x1="1" y1="11" 
+                  x2="11" y2="1" 
+                  stroke="black" 
+                  stroke-width="2"/>
+            <line x1="1" y1="1" 
+                  x2="11" y2="11" 
+                  stroke="black" 
+                  stroke-width="2"/>
+          </svg>
+        </ul>
+        <svg id="open-menu" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-28.34 -28.34 340.11 340.11" xml:space="preserve" width="24px" height="24px" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <rect x="0" y="40.84" style="fill:#010002;" width="283.426" height="47.735"></rect> <rect x="0" y="117.282" style="fill:#010002;" width="283.426" height="47.735"></rect> <rect x="0" y="194.851" style="fill:#010002;" width="283.426" height="47.735"></rect> </g> </g></svg>
+    </nav>
+    <section class="about-section">
+        <h2>About the Project</h2>
+        <p>Welcome to the Quick Weather App, a project developed by <b>Smita Dutta</b> and <b>Manab Seal</b> as part of the "Fundamentals of Java and Web Programming" course at Anudip Foundation. This app allows you to quickly check the weather using the OpenWeatherAPI, providing you with accurate and up-to-date information at your fingertips.</p>
+    </section>
+
+    <section class="team-section">
+        <h2>Meet the Team</h2>
+        <div class="team-member">
+            <img src="./img/smita-dutta.jpg" alt="Smita Dutta">
+            <h3>Smita Dutta</h3>
+            <p>Dedicated to mastering the art of coding. Enjoys turning ideas into reality through the power of technology.</p>
+        </div>
+        <div class="team-member">
+            <img src="./img/manab-seal.jpg" alt="Manab Seal">
+            <h3>Manab Seal</h3>
+            <p>Passionate about web development and programming. Excited to create innovative solutions and enhance user experiences.</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Quick Weather App. All rights reserved.</p>
+    </footer>
+</body>
+</html>

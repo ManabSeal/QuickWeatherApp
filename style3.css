@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  background: #E3F2FD;
+}
+h1 {
+  font-size: 1.75rem;
+  text-align: left;
+  margin-left: 3rem;
+}
+nav{
+  background: #5372F0;
+  padding: 18px 0;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+}
+nav ul{
+  display: flex;
+  flex-direction: row; 
+  
+}
+nav ul li{
+  list-style: none;
+  margin-right: 3rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: inline-block;
+}
+nav ul .active{
+  border-bottom: 1px solid #fff;
+}
+nav ul li:hover{
+  color: #a0a0a0;
+}
+nav svg{
+  display: none;
+  cursor: pointer;
+}
+
+
+.about-section{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
+}
+
+
+@media (max-width: 950px) {
+  .about-section {
+    max-width: 80vw;
+  }
+}
+
+
+
+@media (max-width: 750px) {
+
+  h1 {
+    font-size: 1.45rem;
+    padding: 3px 0;
+    margin-left: 2rem;
+  }
+  #open-menu{
+    margin-right: 2rem;
+  }
+  nav svg{
+    display: block;
+    left: 30px;
+  }
+
+  nav ul{
+    background-color: #5372F0;
+    position: fixed;
+    top:0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    /* z-index: 2; */
+    transition: right 0.5s;
+  }
+  nav ul{
+    flex-direction: column;
+  }
+  nav ul li{
+      display: block;
+      margin: 18px;
+  }
+
+  nav ul svg{
+    position: absolute;
+    top: 25px;
+    left: 18px;
+    cursor: pointer;
+  }
+
+  nav ul .active{
+    color: #000;
+    border: 0;
+  }
+}
