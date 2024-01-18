@@ -244,4 +244,8 @@ footer {
     color: #000;
     border: 0;
   }
+
+  .team-section{
+    margin-bottom: 90px;
+  }
 }
